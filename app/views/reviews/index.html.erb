@@ -1,0 +1,16 @@
+<h1>Reviews</h1>
+
+<div class="container">
+  <ul>
+    <%@product.reviews.each do |review|%>
+      <li><%= review.author %></li>
+      <li><%= review.content_body %></li>
+      <li><%= review.rating %></li>
+  <hr>
+    <%end%>
+  </ul>
+</div>
+
+
+
+  <%= link_to 'New Review', new_product_review_path(@product) %>

@@ -1,0 +1,14 @@
+<h1>Welcome to Mario's Specialty Shop</h1>
+
+<div class="container">
+  <ul>
+    <%@products.each do |product|%>
+    <li><%=link_to product.name , product_path(product) %></li>
+      <li><%= product.cost %></li>
+      <li><%= product.country_of_origin %></li>
+  <hr>
+    <%end%>
+  </ul>
+</div>
+
+<%= link_to 'New Product', new_product_path(@product)  %>

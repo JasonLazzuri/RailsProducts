@@ -1,0 +1,11 @@
+<h1>Product</h1>
+
+<h3>Name: <%= @product.name %></h3>
+<h4>Cost: <%= @product.cost %></h4>
+<h4>Country Of Origin: <%= @product.country_of_origin %></h4>
+
+<p>
+  <%= link_to 'Reviews', product_reviews_path(@product)  %>
+  <%= link_to 'Edit', edit_product_path(@product)  %>
+  <%= link_to 'Delete', product_path(@product), :data=>{:method=>'delete'} %>
+</p>

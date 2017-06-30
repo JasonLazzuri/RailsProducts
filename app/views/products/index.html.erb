@@ -11,4 +11,24 @@
   </ul>
 </div>
 
+
+<h3>Three Most Recently Created Products</h3>
+<ul>
+  <%@products.three_most_recent.each do |product|%>
+  <li><%=product.name%></li>
+  <% end %>
+
+</ul>
+<hr>
+
+<h3>The Product with the most reviews:</h3>
+<ul>
+  <% @products.most_reviews.each do |product| %>
+  <li><%=product.name%></li>
+  <% end %>
+</ul>
+
+<br>
+<hr>
+
 <%= link_to 'New Product', new_product_path(@product)  %>

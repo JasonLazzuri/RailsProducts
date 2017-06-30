@@ -21,9 +21,19 @@
 </ul>
 <hr>
 
-<h3>The Product with the most reviews:</h3>
+<h3>The Products with the most reviews:</h3>
 <ul>
   <% @products.most_reviews.each do |product| %>
+  <li><%=product.name%></li>
+  <% end %>
+</ul>
+
+<br>
+<hr>
+
+<h3>Products from the USA</h3>
+<ul>
+  <% @products.all_USA.each do |product| %>
   <li><%=product.name%></li>
   <% end %>
 </ul>

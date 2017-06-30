@@ -8,10 +8,10 @@
 
 Product.destroy_all
 
-100.times do |index|
+250.times do |index|
   new_product = Product.create!(name: Faker::Food.ingredient,
                 cost: Faker::Number.decimal(2),
-                country_of_origin: Faker::LordOfTheRings.location,
+                country_of_origin: Faker::Address.country,
 
   )
   rand(1..10).times do |review|

@@ -14,3 +14,25 @@
  // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+ #mario{
+   width: 140px;
+   padding-left: 10px;
+ }
+
+.jumbotron{
+  text-align: center;
+  background-image: url("http://profilerehab.com/facebook_covers/gaming/cool_mario_cover_3.jpg");
+  color: red;
+}
+
+
+@font-face {
+    font-family: pixelfont;
+    src: url(pixel.otf);
+}
+
+h1 {
+    font-family: pixelfont;
+    font-weight: bold;
+}

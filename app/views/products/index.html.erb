@@ -1,6 +1,9 @@
-<h1>Welcome to Mario's Specialty Shop</h1>
+<div class="container">
+
+<h1 class="jumbotron"><img id="mario" src="http://www.pngmart.com/files/2/Mario-PNG-Photos.png" alt="">Welcome to Mario's Specialty Shop</h1>
 
 <div class="container">
+  <h1>Look at our Wonderful Products</h1>
   <ul>
     <%@products.each do |product|%>
     <li><%=link_to product.name , product_path(product) %></li>
@@ -42,3 +45,7 @@
 <hr>
 
 <%= link_to 'New Product', new_product_path(@product)  %>
+
+<br>
+<br>
+</div>
